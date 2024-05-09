@@ -1,8 +1,32 @@
 {
   "$schema": "https://json.schemastore.org/nest-cli",
   "collection": "@nestjs/schematics",
-  "sourceRoot": "src",
+  "sourceRoot": "apps/cryptofunds/src",
   "compilerOptions": {
-    "deleteOutDir": true
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/cryptofunds/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/cryptofunds",
+  "projects": {
+    "cryptofunds": {
+      "type": "application",
+      "root": "apps/cryptofunds",
+      "entryFile": "main",
+      "sourceRoot": "apps/cryptofunds/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/cryptofunds/tsconfig.app.json"
+      }
+    },
+    "api": {
+      "type": "application",
+      "root": "apps/api",
+      "entryFile": "main",
+      "sourceRoot": "apps/api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api/tsconfig.app.json"
+      }
+    }
   }
 }
