@@ -1,56 +1,94 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+cryptofunds-frontend/node_modules
+cryptofunds-frontend/.pnp
+cryptofunds-frontend/.pnp.js
+cryptofunds-frontend/.yarn/install-state.gz
+
+# testing
+cryptofunds-frontend/coverage
+
+# next.js
+cryptofunds-frontend/.next/
+cryptofunds-frontend/out/
+
+# production
+cryptofunds-frontend/build
+
+# misc
+cryptofunds-frontend/.DS_Store
+cryptofunds-frontend/*.pem
+
+# debug
+cryptofunds-frontend/npm-debug.log*
+cryptofunds-frontend/yarn-debug.log*
+cryptofunds-frontend/yarn-error.log*
+
+# local env files
+cryptofunds-frontend/.env*.local
+
+# vercel
+cryptofunds-frontend/.vercel
+
+# typescript
+cryptofunds-frontend/*.tsbuildinfo
+cryptofunds-frontend/next-env.d.ts
+
+# cryptofunds-backend
 # compiled output
-/dist
-/node_modules
-/build
+cryptofunds-backend/dist
+cryptofunds-backend/node_modules
+cryptofunds-backend/build
 
 # Logs
-logs
-*.log
-npm-debug.log*
-pnpm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
+cryptofunds-backend/logs
+cryptofunds-backend/*.log
+cryptofunds-backend/npm-debug.log*
+cryptofunds-backend/pnpm-debug.log*
+cryptofunds-backend/yarn-debug.log*
+cryptofunds-backend/yarn-error.log*
+cryptofunds-backend/lerna-debug.log*
 
 # OS
-.DS_Store
+cryptofunds-backend/.DS_Store
 
 # Tests
-/coverage
-/.nyc_output
+cryptofunds-backend/coverage
+cryptofunds-backend/.nyc_output
 
 # IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+cryptofunds-backend/.idea
+cryptofunds-backend/.project
+cryptofunds-backend/.classpath
+cryptofunds-backend/.c9/
+cryptofunds-backend/*.launch
+cryptofunds-backend/.settings/
+cryptofunds-backend/*.sublime-workspace
 
 # IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+cryptofunds-backend/.vscode/*
+cryptofunds-backend/!.vscode/settings.json
+cryptofunds-backend/!.vscode/tasks.json
+cryptofunds-backend/!.vscode/launch.json
+cryptofunds-backend/!.vscode/extensions.json
 
 # dotenv environment variable files
-.env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
+cryptofunds-backend/.env
+cryptofunds-backend/.env.development.local
+cryptofunds-backend/.env.test.local
+cryptofunds-backend/.env.production.local
+cryptofunds-backend/.env.local
 
 # temp directory
-.temp
-.tmp
+cryptofunds-backend/.temp
+cryptofunds-backend/.tmp
 
 # Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
+cryptofunds-backend/pids
+cryptofunds-backend/*.pid
+cryptofunds-backend/*.seed
+cryptofunds-backend/*.pid.lock
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+cryptofunds-backend/report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
