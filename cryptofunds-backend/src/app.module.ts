@@ -5,6 +5,7 @@ import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
 import { GoogleStrategy } from './auth/google.strategy'
 import { join } from 'path'
+import { TenantModule } from './tenant/tenant.module';
 
 
 @Module({
@@ -19,7 +20,8 @@ import { join } from 'path'
       database: 'test',
       entities: [join(__dirname, '**', '*.entity.{ts,js}')],
       synchronize: true
-    })],
+    }),
+    TenantModule],
   controllers: [AppController],
   providers: [AppService, GoogleStrategy],
 })
